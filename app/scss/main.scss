@@ -1,4 +1,10 @@
-
+body{
+  background:#dbdbdb;
+  font-family:'Nunito Sans', sans-serif;
+  a{
+    text-decoration:none;
+  }
+}
 
 .circle-multiline {
   box-shadow: -4px 3px 35px -1px rgba(0,0,0,0.75);
@@ -49,6 +55,9 @@
   position:fixed;
   top:0;
   z-index:3;
+  a{
+    text-decoration:none;
+  }
   h1{
     margin: 0;
     color: white;
@@ -72,14 +81,24 @@
   display:block;
   padding-top:1rem;
   padding-bottom:1rem;
-  width:100%;
-  text-align:center;
   background:black;
   color:white;
   width:10rem;
+  padding-left:1rem;
+  transition:background .3s ease-in-out;
+  &:hover{
+    background:#333333;
+  }
+
+  .fa{
+    font-size:1rem;
+    float:right;
+    margin-right:1rem;
+    padding-top:4px;
+  }
 }
 .nav-top{
-  margin-top:3rem;
+  margin-top:1rem;
 }
 
 .nav-accent{
@@ -91,6 +110,7 @@
   background:url('../assets/images/background.jpg');
   background-repeat:no-repeat;
   position:relative;
+  margin-top:2rem;
   img{
     width: 22rem;
     position: absolute;
@@ -103,6 +123,7 @@
   width:13rem;
   padding-top:6rem;
   h2{
+    font-family: 'Archivo Black', sans-serif;
     margin-top: 0;
     color: white;
     font-size: 28px;
@@ -128,6 +149,8 @@
     border-right: 1px solid white;
     padding-right: 9px;
     font-size: 9px;
+    position:relative;
+    z-index:1;
     }
     li:last-of-type{
       border-right:none;
@@ -187,6 +210,7 @@
     border: 1px solid white;
     background-color: #181818;
     color:#eee;
+    opacity:0;
     h2{
       margin:0;
       padding-top:1rem;
@@ -205,5 +229,71 @@
     list-style:none;
     padding-left:.5rem;
     display:inline-block;
+  }
+}
+.underline{
+  width:7rem;
+  height:2px;
+  background:grey;
+  margin-left:.5rem;
+}
+.portfolio{
+  width:95%;
+  margin:0 auto;
+  margin-top:.5rem;
+  background:black;
+  position:relative;
+  &:hover .modal{
+
+    opacity:1;
+  }
+  &:hover h5{
+    opacity:1;
+    transform:scale(1.1);
+  }
+  &:hover h3{
+    opacity:1;
+    transform:scale(1.1);
+  }
+
+
+
+  img{
+  width:100%;
+  }
+
+}
+.modal{
+  position:absolute;
+  opacity:0;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.8);
+  transition:all .3s ease-in-out;
+  h3{
+    color:white;
+    opacity:0;
+    text-align:center;
+    margin-top:3rem;
+    transition:all .5s ease-in-out;
+  }
+  h5{
+    color:white;
+    text-align:center;
+    display:block;
+    margin:0 auto;
+    width:7rem;
+    box-sizing:border-box;
+    padding:.5rem;
+    opacity:0;
+    margin-top:1rem;
+    border:1px solid white;
+    transition:all .5s ease-in-out;
+    &:hover{
+      background:white;
+      color:black;
+    }
   }
 }
