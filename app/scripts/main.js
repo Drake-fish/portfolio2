@@ -20,15 +20,7 @@ setTimeout(()=>{
   $('.attributes').animate({marginTop:'.5rem',opacity:1},500);
 },500);
 });
-$(window).scroll(function(){
-  if($(this).scrollTop()>100){
-    $('.welcome').animate({opacity:1},500);
-  }
-  if($(this).scrollTop()>200){
-    $('.skills').animate({opacity:1},500);
 
-  }
-});
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
   return (
