@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Nunito+Sans|Passion+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" title="no title">
-<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <title>Drake Fish Profolio | Austin, Texas</title>
   </head>
   <body>
@@ -23,20 +23,20 @@
           <span class="bottom"></span>
         </div>
       </nav>
-      <a href="#"><span class="nav-links nav-top">Home </span></a>
-      <a href="#"><span class="nav-links">Portfolio </span></a>
-      <a href="#"><span class="nav-links">About </span></a>
-      <a href="#"><span class="nav-links">Contact </span></a>
+      <a class="scroll" href="#home"><span class="nav-links nav-top">Home </span></a>
+      <a class="scroll" href="#portfolio"><span class="nav-links">Portfolio </span></a>
+      <a class="scroll" href="#about"><span class="nav-links">About </span></a>
+      <a class="scroll" href="#contact"><span class="nav-links">Contact </span></a>
     </div>
-    <div class="intro">
+    <div id="home" class="intro">
       <div class="top-info">
       <h2 class="name">DRAKE FISH</h2>
       <ul class="attributes">
-        <li>DESIGNER</li>
         <li>DEVELOPER</li>
+        <li>MOTIVATED</li>
         <li>LEADER</li>
       </ul>
-      <a href="#">View Portfolio</a>
+      <a class="scroll" href="#portfolio">View Portfolio</a>
       </div>
 
 <img src="../assets/images/portfoliopic.png">
@@ -47,26 +47,10 @@
     </div>
     <p>My name is Drake and I am an Austin based Front-End Developer. I am dedicated to creating memorable experiences by exploring and pushing the web to new heights. </p>
   </div>
-    <div class="skills">
-    <h2>SKILLS</h2>
-    <div class="underline">
-    </div>
-    <ul>
-      <li class="skill">JavaScript</li>
-      <li class="skill">HTML5</li>
-      <li class="skill">CSS3</li>
-      <li class="skill">SASS</li>
-      <li class="skill">AJAX</li>
-    </ul>
-    <ul>
-      <li class="skill">RESTful API's</li>
-      <li class="skill">BackboneJS</li>
-      <li class="skill">ReactJS</li>
-      <li class="skill">NPM</li>
-      <li class="skill">JQuery</li>
-    </ul>
+  <div id="portfolio" class="featured">
+    <h2>Featured Projects</h2>
   </div>
-  <div class="portfolio">
+  <div  class="portfolio">
     <div class="modal">
       <h3>I Don't Care You Pick</h3>
       <h5>View Project</h5>
@@ -94,7 +78,7 @@
     <div class="break">
     </div>
   </div>
-  <section class="timeline">
+  <section id="about" class="timeline">
   <ul>
     <li>
       <div>
@@ -125,9 +109,29 @@
       <div>
         <time>2016</time>
         I made my first step into the technical industry as a Front-End Engineer at The Iron Yard in Austin, Texas. While at The Iron Yard I gained a skill set to sky rocket me into the technical industry.
+      </div>
     </li>
   </ul>
 </section>
+  <form id="contact">
+    <div class="contact-modal">
+      <p> Your Message has been sent!</p>
+      <i class="fa fa-check-circle" aria-hidden="true"></i>
+    </div>
+    <div class="fail-modal">
+      <p>Your message failed, Please try again!</p>
+      <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </div>
+    <h2>Let's Chat</h2>
+    <input class="contact-name" type="text" placeholder="Name"/>
+    <input class="email" type="text" placeholder="Email"/>
+    <textarea class="message" placeholder="Send me a message"></textarea>
+    <input class="submit" type="submit" value="Send"/>
+  </form>
+
+  <footer>
+    <span>&copy; Drake Fish 2017</span>
+</footer>
 <script src="main.js"></script>
 
   </body>
